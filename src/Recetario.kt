@@ -1,6 +1,6 @@
 package main
 
-fun main(args: Array<string>) {
+fun main(args: Array<String>) {
     val menu = """
         ::RECETARIO::
         
@@ -10,9 +10,9 @@ fun main(args: Array<string>) {
         3.-Salir
         """.trimMargin().trimIndent()
     println(menu)
-    val opcion: string? = readLine()
+    val opcion: String? = readLine()
     var a = 0
-    do{
+    do {
         a++
         when (opcion) {
             "1" -> println("Elegiste la opcion 1, hacer una recea")
@@ -22,5 +22,6 @@ fun main(args: Array<string>) {
 
 
         }
-    }while (opcion != "3" && a < 1)
+    } while (opcion != "3" && a < 1)
 }
+
